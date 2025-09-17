@@ -1,0 +1,228 @@
+[
+  {
+    "id": 1,
+    "title": "Mountain Treks",
+    "image": "https://i.ibb.co.com/ynYctHTV/Mountain-Treks.jpg",
+    "category": "Trekking",
+    "shortDescription": "Experience breathtaking views while trekking through majestic mountains.",
+    "cost": 250,
+    "bookingAvailability": true,
+    "location": "Himalayas, Nepal",
+    "duration": "7 Days",
+    "adventureLevel": "Challenging",
+    "includedItems": ["Guide", "Meals", "Camping Gear", "First Aid Kit"],
+    "ecoFriendlyFeatures": [
+      "Plastic-free camping",
+      "Leave no trace policy",
+      "Local guides"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry warm clothing",
+      "Good physical fitness required",
+      "Respect local culture"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ocean Dives",
+    "image": "https://i.ibb.co.com/QjphqgwS/Ocean-Dives.jpg",
+    "category": "Diving",
+    "shortDescription": "Dive deep into crystal clear waters and explore vibrant coral reefs.",
+    "cost": 180,
+    "bookingAvailability": true,
+    "location": "Great Barrier Reef, Australia",
+    "duration": "3 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Diving Gear",
+      "Instructor",
+      "Boat Transfer",
+      "Safety Equipment"
+    ],
+    "ecoFriendlyFeatures": [
+      "Reef-safe sunscreen",
+      "Marine conservation awareness",
+      "No plastic bottles"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Swimming skills required",
+      "Follow instructor guidelines",
+      "Avoid touching marine life"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Wildlife Safaris",
+    "image": "https://i.ibb.co.com/yB78gv4v/Wildlife-Safaris.jpg",
+    "category": "Safari",
+    "shortDescription": "Witness the beauty of wild animals in their natural habitats.",
+    "cost": 300,
+    "bookingAvailability": true,
+    "location": "Serengeti, Tanzania",
+    "duration": "5 Days",
+    "adventureLevel": "Easy",
+    "includedItems": ["Safari Vehicle", "Guide", "Meals", "Binoculars"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly vehicles",
+      "Support local conservation",
+      "Zero waste policy"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Stay inside vehicle",
+      "Do not feed animals",
+      "Respect park rules"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Forest Expeditions",
+    "image": "https://i.ibb.co.com/7xN3yYM0/Forest-Expeditions.jpg",
+    "category": "Exploration",
+    "shortDescription": "Discover lush forests filled with unique flora and fauna.",
+    "cost": 200,
+    "bookingAvailability": false,
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "6 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Guide", "Meals", "Survival Kit", "Camping Gear"],
+    "ecoFriendlyFeatures": [
+      "Use of biodegradable products",
+      "Local community support",
+      "No single-use plastics"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry insect repellent",
+      "Wear lightweight clothing",
+      "Stay with the group"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Camping Retreats",
+    "image": "https://i.ibb.co.com/rG1QCQRd/Camping-Retreats.jpg",
+    "category": "Camping",
+    "shortDescription": "Relax under the stars with eco-friendly camping experiences.",
+    "cost": 120,
+    "bookingAvailability": true,
+    "location": "Rocky Mountains, USA",
+    "duration": "2 Days",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Tent",
+      "Sleeping Bag",
+      "Campfire Meals",
+      "First Aid Kit"
+    ],
+    "ecoFriendlyFeatures": [
+      "Solar-powered lighting",
+      "Zero plastic waste",
+      "Reusable cookware"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Pack light",
+      "Respect campfire safety",
+      "Dispose of waste responsibly"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "River Adventures",
+    "image": "https://i.ibb.co.com/zhwpRNkm/River-Adventures.jpg",
+    "category": "Rafting",
+    "shortDescription": "Enjoy thrilling rafting rides across wild river rapids.",
+    "cost": 150,
+    "bookingAvailability": true,
+    "location": "Colorado River, USA",
+    "duration": "1 Day",
+    "adventureLevel": "Challenging",
+    "includedItems": ["Rafting Gear", "Safety Helmet", "Guide", "Snacks"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly rafts",
+      "Waste collection system",
+      "Promotes river conservation"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Wear safety gear",
+      "Follow safety instructions",
+      "Be prepared to get wet"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Desert Exploration",
+    "image": "https://i.ibb.co.com/FLWXrSLG/Desert-Exploration.jpg",
+    "category": "Exploration",
+    "shortDescription": "Embark on a unique adventure across vast desert landscapes.",
+    "cost": 220,
+    "bookingAvailability": true,
+    "location": "Sahara Desert, Morocco",
+    "duration": "4 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Camel Ride", "Meals", "Tents", "Local Guide"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered camps",
+      "Support desert communities",
+      "Plastic-free packaging"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Stay hydrated",
+      "Wear sun protection",
+      "Travel with guide"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Mangrove Forest Expeditions",
+    "image": "https://i.ibb.co.com/SXGngBwF/Mangrove-Forest-Expeditions.jpg",
+    "category": "Exploration",
+    "shortDescription": "Explore unique ecosystems of mangrove forests by boat and on foot.",
+    "cost": 170,
+    "bookingAvailability": true,
+    "location": "Sundarbans, Bangladesh",
+    "duration": "3 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Boat Ride", "Local Guide", "Meals", "Safety Gear"],
+    "ecoFriendlyFeatures": [
+      "Eco-safe boats",
+      "Wildlife protection programs",
+      "Reusable water bottles"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Avoid littering",
+      "Respect local communities",
+      "Stay inside marked trails"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Glacier Hiking",
+    "image": "https://i.ibb.co.com/1tVMGZDV/Glacier-Hiking.jpg",
+    "category": "Hiking",
+    "shortDescription": "Trek across stunning glaciers with professional guides for a once-in-a-lifetime experience.",
+    "cost": 280,
+    "bookingAvailability": true,
+    "location": "Vatnajökull, Iceland",
+    "duration": "2 Days",
+    "adventureLevel": "Challenging",
+    "includedItems": ["Crampons", "Ice Axe", "Safety Gear", "Guide"],
+    "ecoFriendlyFeatures": [
+      "Carbon-neutral tours",
+      "Leave no trace principles",
+      "Eco-certified gear"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear insulated clothing",
+      "Follow safety protocols",
+      "No solo wandering on glaciers"
+    ]
+  }
+]
