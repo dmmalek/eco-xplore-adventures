@@ -48,7 +48,6 @@ const Banner = () => {
             adventures. From mountains to oceans, experience it all in a
             sustainable way.
           </p>
-          <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
     </div>

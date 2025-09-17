@@ -1,20 +1,29 @@
+import { NavLink } from "react-router-dom";
+
 const AdventureCard = ({ adventures }) => {
-  const { title, image, ecoFriendlyFeatures } = adventures;
+  const { id, title, image, ecoFriendlyFeatures } = adventures;
   return (
     <div>
       <div className="card bg-base-100 shadow-2xl">
-        <figure className="px-5 pt-5 ">
+        <figure className=" pt-5 ">
           <img src={image} alt={title} className="w-11/12 h-56 rounded-2xl" />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">{title}</h2>
-          <ul>
-            {ecoFriendlyFeatures.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
+        <div className="card-body  items-start text-left">
+          <h2 className="card-title ">{title}</h2>
+          <div>
+            <ul>
+              {ecoFriendlyFeatures.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
           <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
+            <NavLink
+              to={`/adventure/${id}`}
+              className="btn bg-green-600 text-white font-semibold"
+            >
+              Explore Now
+            </NavLink>
           </div>
         </div>
       </div>

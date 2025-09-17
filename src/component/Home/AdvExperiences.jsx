@@ -6,8 +6,7 @@ const AdvExperiences = () => {
   console.log(data);
   return (
     <div>
-      <h1>Adventure Experiences Section</h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 bg-green-50 py-4">
         {data.map((adventures) => (
           <AdventureCard
             key={adventures.id}
