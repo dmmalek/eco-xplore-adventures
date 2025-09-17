@@ -12,15 +12,15 @@ import { useLoaderData } from "react-router-dom";
 const Banner = () => {
   const data = useLoaderData();
   return (
-    <div className="hero bg-green-200 min-h-screen px-4">
+    <div className="hero bg-green-200 min-h-screen px-4 ">
       <div className="hero-content flex-col lg:flex-row-reverse gap-10">
         {/* Swiper Section */}
-        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
           <Swiper
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper "
+            className="mySwiper overflow-hidden"
           >
             {data.map((image, idx) => (
               <SwiperSlide key={idx} className="rounded-xl overflow-hidden">
