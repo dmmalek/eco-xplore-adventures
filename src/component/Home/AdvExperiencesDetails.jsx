@@ -121,7 +121,7 @@ const AdvExperiencesDetails = () => {
         </div>
         <div className="py-4">
           <button
-            className="btn bg-green-600 text-white font-semibold"
+            className="btn bg-gradient-to-r from-emerald-500 to-teal-500 text-white"
             onClick={handleTalkWithExpart}
           >
             Talk with Expert
@@ -141,7 +141,9 @@ const AdvExperiencesDetails = () => {
               </p>
               <div className="modal-action">
                 <form method="dialog">
-                  <button className="btn">Close</button>
+                  <button className="btn bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
+                    Close
+                  </button>
                 </form>
               </div>
             </div>

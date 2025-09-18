@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AuthContext } from "../Contex/AuthProvider";
+import { AuthContext } from "../../component/context/AuthProvider";
 
 const Register = () => {
   const { signUpUser, profileUpdate } = useContext(AuthContext);

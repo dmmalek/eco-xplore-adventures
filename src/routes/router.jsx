@@ -4,8 +4,9 @@ import ErrorPage from "../component/ErrorPage";
 import HomePage from "../pages/HomePage";
 import AdvExperiencesDetails from "../component/Home/AdvExperiencesDetails";
 import AuthLayout from "../layouts/AuthLayout";
-import { LogIn } from "lucide-react";
+
 import Register from "../pages/Auth/Register";
+import LogIn from "../pages/Auth/Login";
 
 const router = createBrowserRouter([
   {

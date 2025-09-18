@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { AuthContext } from "../Contex/AuthProvider";
-import usePageTitle from "./usePageTitle";
+import { AuthContext } from "../component/context/AuthProvider";
 
 const Navbar = () => {
-  usePageTitle();
+  // usePageTitle();
   const { user, signOutUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -34,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm bg-gradient-to-r from-green-600 via-teal-600 to-emerald-500 text-white font-semibold ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,13 +80,19 @@ const Navbar = () => {
                 />
               </NavLink>
 
-              <button className="btn" onClick={handleSignOut}>
+              <button
+                className="btn bg-[#c8e6c9] hover:bg-base-100 border-none font-bold"
+                onClick={handleSignOut}
+              >
                 Log Out
               </button>
             </div>
           </>
         ) : (
-          <NavLink className="btn" to="/auth/login">
+          <NavLink
+            className="btn bg-[#c8e6c9] hover:bg-base-100 border-none font-bold"
+            to="/auth/login"
+          >
             Log In
           </NavLink>
         )}

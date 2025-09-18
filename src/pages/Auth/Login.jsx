@@ -1,5 +1,5 @@
 import { useContext, useRef } from "react";
-import { AuthContext } from "../Contex/AuthProvider";
+import { AuthContext } from "../../component/context/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 const LogIn = () => {
