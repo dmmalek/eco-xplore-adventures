@@ -22,6 +22,16 @@ const AdvExperiencesDetails = () => {
     specialInstructions,
   } = adventure;
 
+  const handleTalkWithExpart = () => {
+    const now = new Date();
+    const hour = now.getHours();
+    if (hour >= 10 && hour <= 20) {
+      window.open("https://meet.google.com/bxp-xzyo-tme");
+    } else {
+      document.getElementById("my_modal_5").showModal();
+    }
+  };
+
   if (!adventure) {
     return <ErrorPage />;
   }
@@ -110,9 +120,32 @@ const AdvExperiencesDetails = () => {
           </ul>
         </div>
         <div className="py-4">
-          <button className="btn bg-green-600 text-white font-semibold">
+          <button
+            className="btn bg-green-600 text-white font-semibold"
+            onClick={handleTalkWithExpart}
+          >
             Talk with Expert
           </button>
+
+          {/* Modal section  */}
+          <dialog
+            id="my_modal_5"
+            className="modal modal-bottom sm:modal-middle"
+          >
+            <div className="modal-box">
+              <h3 className="font-bold text-lg">Consultation Unavailable</h3>
+              <p className="py-4">
+                Our experts are available only between{" "}
+                <span className="font-semibold">10:00 AM – 8:00 PM</span>.
+                Please come back during these hours for a live consultation.
+              </p>
+              <div className="modal-action">
+                <form method="dialog">
+                  <button className="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </div>
