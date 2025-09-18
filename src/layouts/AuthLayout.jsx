@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../component/Navbar";
 
-const MainLayout = () => {
+const AuthLayout = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div>
       <Navbar />
       <Outlet />
     </div>
   );
 };
 
-export default MainLayout;
+export default AuthLayout;
