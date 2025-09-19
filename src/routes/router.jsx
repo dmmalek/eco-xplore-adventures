@@ -7,6 +7,7 @@ import AuthLayout from "../layouts/AuthLayout";
 
 import Register from "../pages/Auth/Register";
 import LogIn from "../pages/Auth/Login";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/adventure/:id",
-        element: <AdvExperiencesDetails />,
+        element: (
+          <PrivateRoute>
+            <AdvExperiencesDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/ecoAdventures.json"),
       },
     ],

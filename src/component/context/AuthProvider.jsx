@@ -12,12 +12,15 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState();
+  const [loader, setLoader] = useState(true);
 
   const signUpUser = (email, password) => {
+    setLoader(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signInUser = (email, password) => {
+    setLoader(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
@@ -32,6 +35,7 @@ const AuthProvider = ({ children }) => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
         setUser(currentUser);
+        setLoader(false);
       } else {
         console.log("User signed out");
       }
@@ -41,10 +45,12 @@ const AuthProvider = ({ children }) => {
   }, []);
 
   const signOutUser = () => {
+    setLoader(true);
     return signOut(auth);
   };
 
   const forgetPassword = (email) => {
+    setLoader(true);
     return sendPasswordResetEmail(auth, email);
   };
 
