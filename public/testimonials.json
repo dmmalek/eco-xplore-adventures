@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "image": "https://i.ibb.co.com/xKTC9BB6/image.png",
+    "feedback": "Eco Xplore Adventures made our mountain trek unforgettable! Everything was well organized, and the guides were fantastic.",
+    "location": "Colorado, USA"
+  },
+  {
+    "id": 2,
+    "name": "Rajesh Kumar",
+    "image": "https://i.ibb.co.com/0RqVzs9k/image.png",
+    "feedback": "I loved the eco-friendly approach. The team cares about nature and culture, making our experience truly authentic.",
+    "location": "Kerala, India"
+  },
+  {
+    "id": 3,
+    "name": "Emily Davis",
+    "image": "https://i.ibb.co.com/d0jK2szf/image.png",
+    "feedback": "Joining Eco Xplore was the best decision! The river adventure and wildlife safari were amazing and safe.",
+    "location": "Victoria, Australia"
+  }
+]
