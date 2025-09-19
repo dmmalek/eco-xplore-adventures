@@ -20,7 +20,7 @@ const AdventureCard = ({ adventures }) => {
           <div className="card-actions">
             <NavLink
               to={`/adventure/${id}`}
-              className="btn bg-emerald-600 hover:bg-emerald-700 text-white"
+              className="btn bg-green-600 hover:bg-green-700 text-white"
             >
               Explore Now
             </NavLink>

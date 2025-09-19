@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../component/context/AuthProvider";
+import "../customCss/style.css";
 
 const Navbar = () => {
   // usePageTitle();
@@ -33,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-sm bg-gradient-to-r from-green-600 via-teal-600 to-emerald-500 text-white font-semibold ">
+    <div className="navbar bg-base-100 text-green-600 font-semibold shadow-lg transition">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,7 +82,7 @@ const Navbar = () => {
               </NavLink>
 
               <button
-                className="btn bg-[#c8e6c9] hover:bg-base-100 border-none font-bold"
+                className="btn bg-green-600 hover:bg-green-700 text-white font-semibold shadow-lg transition"
                 onClick={handleSignOut}
               >
                 Log Out
@@ -90,7 +91,7 @@ const Navbar = () => {
           </>
         ) : (
           <NavLink
-            className="btn bg-[#c8e6c9] hover:bg-base-100 border-none font-bold"
+            className="btn bg-green-600 hover:bg-green-700 text-white font-semibold shadow-lg transition"
             to="/auth/login"
           >
             Log In

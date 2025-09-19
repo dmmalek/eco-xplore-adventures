@@ -61,7 +61,7 @@ const LogIn = () => {
               </a>
             </div>
             <input
-              className="btn btn-neutral mt-4"
+              className="btn bg-green-600 hover:bg-green-700 mt-4"
               type="submit"
               value="Log In"
             />

@@ -60,7 +60,7 @@ const Register = () => {
               autoComplete="off"
             />
             <input
-              className="btn btn-neutral mt-4"
+              className="btn bg-green-600 hover:bg-green-700 mt-4 text-white"
               type="submit"
               value="Register"
             />

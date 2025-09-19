@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import BannerBg from "../../assets/image/banner-bg.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,7 +13,10 @@ import { useLoaderData } from "react-router-dom";
 const Banner = () => {
   const data = useLoaderData();
   return (
-    <div className="hero bg-gradient-to-r from-green-100 via-emerald-50 to-teal-100 min-h-screen px-4 ">
+    <div
+      className="hero bg-[] min-h-screen px-4"
+      style={{ backgroundImage: `url(${BannerBg})` }}
+    >
       <div className="hero-content flex-col lg:flex-row-reverse gap-10">
         {/* Swiper Section */}
         <div className="w-full max-w-xs sm:max-w-sm md:max-w-md">
