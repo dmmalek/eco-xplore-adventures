@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Our Mission",
+    "image": "https://i.ibb.co.com/99JhgKgv/Our-Mission.jpg",
+    "points": [
+      "Conservation through exploration",
+      "Authentic cultural connections",
+      "Protecting last wild places",
+      "Supporting local communities"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Expert Guides",
+    "image": "https://i.ibb.co.com/4ZNkwm8P/Expert-Guides.jpg",
+    "points": [
+      "Experienced local guides",
+      "Safety-first approach",
+      "Personalized adventure experiences",
+      "Insider knowledge of hidden spots"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Community & Support",
+    "image": "https://i.ibb.co.com/ynRpbXKw/Community-Support.jpg",
+    "points": [
+      "Join eco-travel communities",
+      "Share experiences and tips",
+      "Access expert advice anytime",
+      "Connect with like-minded travelers"
+    ]
+  }
+]

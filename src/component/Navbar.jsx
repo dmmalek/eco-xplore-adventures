@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../component/context/AuthProvider";
 import "../customCss/style.css";
+import logo from "../assets/image/logo.png";
 
 const Navbar = () => {
   // usePageTitle();
@@ -34,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 text-green-600 font-semibold shadow-lg transition">
+    <div className="navbar bg-base-100 text-green-600 font-semibold shadow-sm transition">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +61,8 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img src={logo} alt="eco xplore adventures" className="w-10" />
+        <a>Eco Xplore Adventures</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>

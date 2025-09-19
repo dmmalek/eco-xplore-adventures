@@ -40,14 +40,14 @@ const Banner = () => {
 
         {/* Text Section */}
         <div className="text-center lg:text-left max-w-lg">
-          <h1 className="text-3xl md:text-5xl font-bold">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-950">
             Welcome to <br />
             <div className="inline-block animate__animated animate__fadeInLeft animate__slower animate__delay-1s">
               Eco Adventures
             </div>
           </h1>
 
-          <p className="py-6 text-sm md:text-base">
+          <p className="py-6 text-sm md:text-base text-gray-950">
             Explore the beauty of nature with unforgettable eco-friendly
             adventures. From mountains to oceans, experience it all in a
             sustainable way.
