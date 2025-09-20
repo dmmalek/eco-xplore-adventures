@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../component/context/AuthProvider";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import SocialLogIn from "../../component/SocialLogIn";
 import Swal from "sweetalert2";
 
 const Register = () => {
   const { signUpUser, profileUpdate } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +18,20 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log(name, url, email, password);
+    //  password validation
+    if (password.length < 6) {
+      setErrorMessage("Password must be at least 6 characters long.");
+    }
+    if (!/[A-Z]/.test(password)) {
+      return setErrorMessage(
+        "Password must contain at least one uppercase letter."
+      );
+    }
+    if (!/[a-z]/.test(password)) {
+      return setErrorMessage(
+        "Password must contain at least one lowercase letter."
+      );
+    }
 
     signUpUser(email, password)
       .then((result) => {
@@ -31,7 +46,8 @@ const Register = () => {
         navigate(redirectTo);
       })
       .catch((error) => {
-        console.log(error.message);
+        const errMesage = error.message;
+        setErrorMessage(errMesage);
       });
   };
 
@@ -82,7 +98,12 @@ const Register = () => {
               Log in Now
             </NavLink>
           </p>
+          {errorMessage && (
+            <p className="text-red-600 text-xs">{errorMessage}</p>
+          )}
         </div>
+        <h3 className="text-center">Or, Register with</h3>
+        <SocialLogIn />
       </div>
     </div>
   );

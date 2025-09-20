@@ -19,7 +19,6 @@ const SocialLogIn = () => {
   };
   return (
     <div className="text-center mb-4">
-      <h3>Or, login with</h3>
       <div className="py-2 ">
         <button
           onClick={handleGoogleLogIn}

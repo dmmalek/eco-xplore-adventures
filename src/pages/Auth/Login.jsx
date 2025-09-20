@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../component/context/AuthProvider";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import SocialLogIn from "../../component/SocialLogIn";
@@ -8,6 +8,8 @@ const LogIn = () => {
   const { signInUser, forgetPassword } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const [errorMessage, setErrorMessage] = useState("");
+
   const emailRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,7 +31,10 @@ const LogIn = () => {
         }
       })
       .catch((error) => {
-        console.log(error.meassage);
+        const errMesage = error.message;
+        const splitMsg = errMesage.split("/")[1];
+        const sliceMsg = splitMsg.slice(0, 18);
+        setErrorMessage(sliceMsg);
       });
   };
   const handleUpdatePassword = () => {
@@ -85,7 +90,13 @@ const LogIn = () => {
               Sign up
             </NavLink>
           </p>
+          {errorMessage && (
+            <p className="text-red-600 text-xs">
+              {errorMessage} , Please Enter valid email or password
+            </p>
+          )}
         </div>
+        <h3 className="text-center">Or, login with</h3>
         <SocialLogIn />
       </div>
     </div>
