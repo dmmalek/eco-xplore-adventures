@@ -52,58 +52,97 @@ const Register = () => {
   };
 
   return (
-    <div className="hero  bg-base-200 min-h-screen">
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <div className="card-body">
-          <h1 className="text-5xl font-bold text-center">Register now!</h1>
-          <form onSubmit={handleSubmit} className="fieldset">
-            <label className="label">Name</label>
-            <input
-              type="text"
-              className="input"
-              name="name"
-              placeholder="Name"
-            />
-            <label className="label">Photo Url</label>
-            <input
-              type="text"
-              className="input"
-              name="url"
-              placeholder="Enter Photo Url"
-            />
-            <label className="label">Email</label>
-            <input
-              type="email"
-              className="input"
-              name="email"
-              placeholder="Email"
-            />
-            <label className="label">Password</label>
-            <input
-              type="password"
-              className="input"
-              name="password"
-              placeholder="Password"
-              autoComplete="off"
-            />
-            <input
-              className="btn bg-green-600 hover:bg-green-700 mt-4 text-white"
-              type="submit"
-              value="Register"
-            />
-          </form>
-          <p>
-            Already have an account?
-            <NavLink className="text-green-600 font-bold ml-1" to="/auth/login">
-              Log in Now
-            </NavLink>
-          </p>
-          {errorMessage && (
-            <p className="text-red-600 text-xs">{errorMessage}</p>
-          )}
+    <div className="hero bg-base-200 min-h-screen px-4 py-8">
+      <div className="w-full max-w-md">
+        <div className="card bg-base-100 w-full shadow-2xl">
+          <div className="card-body p-4 sm:p-6 md:p-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6">
+              Register now!
+            </h1>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="url"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="url"
+                  placeholder="Enter your photo URL"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="password"
+                  placeholder="Enter your password"
+                  autoComplete="off"
+                  required
+                />
+                <label className="label">
+                  <span className="label-text-alt text-xs text-gray-500">
+                    Password must contain at least 6 characters, one uppercase
+                    and one lowercase letter
+                  </span>
+                </label>
+              </div>
+              <div className="form-control mt-4 sm:mt-6">
+                <button
+                  className="btn bg-green-600 hover:bg-green-700 text-white w-full text-sm sm:text-base"
+                  type="submit"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+            <p className="text-center text-sm sm:text-base mt-4">
+              Already have an account?
+              <NavLink
+                className="text-green-600 font-bold ml-1 hover:underline"
+                to="/auth/login"
+              >
+                Log in Now
+              </NavLink>
+            </p>
+            {errorMessage && (
+              <div className="alert alert-error mt-4">
+                <span className="text-xs sm:text-sm">{errorMessage}</span>
+              </div>
+            )}
+            <div className="divider text-sm sm:text-base">
+              Or, register with
+            </div>
+            <SocialLogIn />
+          </div>
         </div>
-        <h3 className="text-center">Or, Register with</h3>
-        <SocialLogIn />
       </div>
     </div>
   );

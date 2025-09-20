@@ -44,10 +44,11 @@ const AuthProvider = ({ children }) => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
         setUser(currentUser);
-        setLoader(false);
       } else {
+        setUser(null);
         console.log("User signed out");
       }
+      setLoader(false);
     });
 
     return unSubscribe;

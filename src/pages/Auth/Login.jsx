@@ -49,55 +49,78 @@ const LogIn = () => {
   };
 
   return (
-    <div className="hero  bg-base-200 min-h-screen">
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <div className="card-body">
-          <h1 className="text-5xl font-bold text-center">Login now!</h1>
-          <form onSubmit={handleSubmit} className="fieldset">
-            <label className="label">Email</label>
-            <input
-              type="email"
-              className="input"
-              name="email"
-              placeholder="Email"
-              ref={emailRef}
-            />
-            <label className="label">Password</label>
-            <input
-              type="password"
-              className="input"
-              name="password"
-              placeholder="Password"
-              autoComplete="off"
-            />
-            <div>
-              <a onClick={handleUpdatePassword} className="link link-hover">
-                Forgot password?
-              </a>
-            </div>
-            <input
-              className="btn bg-green-600 hover:bg-green-700 mt-4 text-white"
-              type="submit"
-              value="Log In"
-            />
-          </form>
-          <p>
-            Don't have an account?
-            <NavLink
-              className="text-green-600 font-bold ml-1"
-              to="/auth/register"
-            >
-              Sign up
-            </NavLink>
-          </p>
-          {errorMessage && (
-            <p className="text-red-600 text-xs">
-              {errorMessage} , Please Enter valid email or password
+    <div className="hero bg-base-200 min-h-screen px-4 py-8">
+      <div className="w-full max-w-md">
+        <div className="card bg-base-100 w-full shadow-2xl">
+          <div className="card-body p-4 sm:p-6 md:p-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6">
+              Login now!
+            </h1>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="email"
+                  placeholder="Enter your email"
+                  ref={emailRef}
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label text-sm sm:text-base">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  className="input input-bordered w-full text-sm sm:text-base"
+                  name="password"
+                  placeholder="Enter your password"
+                  autoComplete="off"
+                  required
+                />
+              </div>
+              <div className="text-left">
+                <button
+                  type="button"
+                  onClick={handleUpdatePassword}
+                  className="link link-hover text-sm sm:text-base text-green-600"
+                >
+                  Forgot password?
+                </button>
+              </div>
+              <div className="form-control mt-4 sm:mt-6">
+                <button
+                  className="btn bg-green-600 hover:bg-green-700 text-white w-full text-sm sm:text-base"
+                  type="submit"
+                >
+                  Log In
+                </button>
+              </div>
+            </form>
+            <p className="text-center text-sm sm:text-base mt-4">
+              Don't have an account?
+              <NavLink
+                className="text-green-600 font-bold ml-1 hover:underline"
+                to="/auth/register"
+              >
+                Sign up
+              </NavLink>
             </p>
-          )}
+            {errorMessage && (
+              <div className="alert alert-error mt-4">
+                <span className="text-xs sm:text-sm">
+                  {errorMessage} - Please enter valid email or password
+                </span>
+              </div>
+            )}
+            <div className="divider text-sm sm:text-base">Or, login with</div>
+            <SocialLogIn />
+          </div>
         </div>
-        <h3 className="text-center">Or, login with</h3>
-        <SocialLogIn />
       </div>
     </div>
   );

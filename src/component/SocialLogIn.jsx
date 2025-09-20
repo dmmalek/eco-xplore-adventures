@@ -18,13 +18,14 @@ const SocialLogIn = () => {
       .catch((error) => console.log(error.message));
   };
   return (
-    <div className="text-center mb-4">
-      <div className="py-2 ">
+    <div className="text-center">
+      <div className="py-2">
         <button
           onClick={handleGoogleLogIn}
-          className="btn text-teal-600 hover:bg-green-600 hover:text-white font-semibold border-black w-4/5"
+          className="btn btn-outline hover:bg-green-600 hover:text-white hover:border-green-600 text-teal-600 font-semibold w-full text-sm sm:text-base transition-colors duration-200"
         >
-          <FaGoogle /> Sign Up With Google
+          <FaGoogle className="text-lg" />
+          <span>Continue with Google</span>
         </button>
       </div>
     </div>

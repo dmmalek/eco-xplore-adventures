@@ -5,9 +5,9 @@ import { AuthContext } from "../component/context/AuthProvider";
 import Loading from "../component/Loading";
 
 const PrivateRoute = ({ children }) => {
-  const { user, loading } = useContext(AuthContext);
+  const { user, loader } = useContext(AuthContext);
   const location = useLocation();
-  if (loading) {
+  if (loader) {
     return <Loading />;
   }
 

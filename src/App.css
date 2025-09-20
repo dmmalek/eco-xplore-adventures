@@ -18,18 +18,25 @@ body {
 
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  min-height: 250px;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
