@@ -13,8 +13,9 @@ const PrivateRoute = ({ children }) => {
 
   if (user) {
     return children;
+  } else {
+    return <Navigate to={"/auth/login"} state={location.pathname}></Navigate>;
   }
-  return <Navigate to={"/auth/login"} state={location.pathname}></Navigate>;
 };
 
 export default PrivateRoute;

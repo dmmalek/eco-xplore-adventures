@@ -3,11 +3,13 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../component/context/AuthProvider";
 import "../customCss/style.css";
 import logo from "../assets/image/logo.png";
+import usePageTitle from "./usePageTitle";
 
 const Navbar = () => {
   // usePageTitle();
   const { user, signOutUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  usePageTitle();
 
   const links = (
     <>

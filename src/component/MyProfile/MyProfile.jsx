@@ -8,6 +8,9 @@ const MyProfile = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
       <div className="w-full max-w-sm sm:max-w-md md:max-w-lg bg-white rounded-2xl shadow-md p-6 text-center">
+        <h1 className="text-2xl font-bold text-center mb-4">
+          Welcome, {user?.displayName}
+        </h1>
         <div className="flex flex-col items-center">
           <img
             src={user.photoURL}
