@@ -8,6 +8,8 @@ import AuthLayout from "../layouts/AuthLayout";
 import Register from "../pages/Auth/Register";
 import LogIn from "../pages/Auth/Login";
 import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../component/MyProfile/MyProfile";
+import UpdateProfie from "../component/MyProfile/UpdateProfie";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,22 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/ecoAdventures.json"),
+      },
+      {
+        path: "myProfile",
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfie />
+          </PrivateRoute>
+        ),
       },
     ],
   },
