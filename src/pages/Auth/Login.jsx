@@ -1,10 +1,13 @@
 import { useContext, useRef } from "react";
 import { AuthContext } from "../../component/context/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import SocialLogIn from "../../component/SocialLogIn";
+import Swal from "sweetalert2";
 
 const LogIn = () => {
   const { signInUser, forgetPassword } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
   const emailRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,8 +18,15 @@ const LogIn = () => {
 
     signInUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        navigate("/");
+        if (result.user) {
+          Swal.fire({
+            title: "Good job!",
+            text: "Sign In Succesfully",
+            icon: "success",
+          });
+          const redirectTo = location.state || "/";
+          navigate(redirectTo);
+        }
       })
       .catch((error) => {
         console.log(error.meassage);
@@ -66,7 +76,17 @@ const LogIn = () => {
               value="Log In"
             />
           </form>
+          <p>
+            Don't have an account?
+            <NavLink
+              className="text-green-600 font-bold ml-1"
+              to="/auth/register"
+            >
+              Sign up
+            </NavLink>
+          </p>
         </div>
+        <SocialLogIn />
       </div>
     </div>
   );

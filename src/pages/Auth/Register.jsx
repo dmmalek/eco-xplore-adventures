@@ -1,8 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../../component/context/AuthProvider";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { signUpUser, profileUpdate } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +22,13 @@ const Register = () => {
       .then((result) => {
         console.log(result.user);
         profileUpdate(name, url);
+        Swal.fire({
+          title: "Good job!",
+          text: "Sign Up Succesfully",
+          icon: "success",
+        });
+        const redirectTo = location.state || "/";
+        navigate(redirectTo);
       })
       .catch((error) => {
         console.log(error.message);
@@ -65,6 +76,12 @@ const Register = () => {
               value="Register"
             />
           </form>
+          <p>
+            Already have an account?
+            <NavLink className="text-green-600 font-bold ml-1" to="/auth/login">
+              Log in Now
+            </NavLink>
+          </p>
         </div>
       </div>
     </div>

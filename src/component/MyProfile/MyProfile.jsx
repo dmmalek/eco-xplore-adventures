@@ -4,12 +4,13 @@ import { AuthContext } from "../context/AuthProvider";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
+  console.log(user.photoURL);
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4">
       <div className="w-full max-w-sm sm:max-w-md md:max-w-lg bg-white rounded-2xl shadow-md p-6 text-center">
         <div className="flex flex-col items-center">
           <img
-            src={user?.photoURL}
+            src={user.photoURL}
             alt="Profile"
             className="w-24 h-24 md:w-32 md:h-32 rounded-full shadow mb-4 object-cover"
           />
