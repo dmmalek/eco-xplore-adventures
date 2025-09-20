@@ -70,7 +70,7 @@ const Navbar = () => {
         {user ? (
           <>
             <div className="flex items-center space-x-4">
-              <p>{user?.email}</p>
+              <p>{user?.displayName}</p>
               <NavLink
                 className="w-8 h-8 rounded-full shadow bg-base-100"
                 to="/myprofile"
