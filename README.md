@@ -78,42 +78,6 @@
 - Node.js (v16 or higher)
 - npm or yarn package manager
 
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/dmmalek/eco-xplore-adventures.git
-   cd eco-xplore-adventures
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   Create a `.env.local` file and add your Firebase configuration:
-
-   ```env
-   VITE_FIREBASE_API_KEY=your_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-   VITE_FIREBASE_PROJECT_ID=your_project_id
-   # Add other Firebase config variables
-   ```
-
-4. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-5. **Build for production**
-   ```bash
-   npm run build
-   ```
-
 ## 📱 Responsive Design
 
 The application is fully responsive and optimized for:
@@ -136,18 +100,7 @@ The application is fully responsive and optimized for:
 - **Typography**: Modern, readable font system
 - **Components**: Consistent design language across all UI elements
 - **Interactions**: Smooth hover effects and micro-animations
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Fonts**: Poppins
 
 ## 👨‍💻 Developer
 
@@ -155,7 +108,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GitHub: [@dmmalek](https://github.com/dmmalek)
 - Portfolio: [Your Portfolio URL]
-
----
-
-_Built with ❤️ for sustainable tourism and eco-friendly adventures_
