@@ -35,7 +35,6 @@ const Register = () => {
 
     signUpUser(email, password)
       .then((result) => {
-        console.log(result.user);
         profileUpdate(name, url);
         Swal.fire({
           title: "Good job!",
@@ -107,12 +106,6 @@ const Register = () => {
                   autoComplete="off"
                   required
                 />
-                <label className="label">
-                  <span className="label-text-alt text-xs text-gray-500">
-                    Password must contain at least 6 characters, one uppercase
-                    and one lowercase letter
-                  </span>
-                </label>
               </div>
               <div className="form-control mt-4 sm:mt-6">
                 <button

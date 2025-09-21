@@ -37,7 +37,6 @@ const AdvExperiencesDetails = () => {
     return <ErrorPage />;
   }
 
-  console.log(adventure);
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-4 sm:py-6 md:py-8">
       <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto p-4 sm:p-6 md:p-8 bg-white rounded-xl sm:rounded-2xl shadow-lg">

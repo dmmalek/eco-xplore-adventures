@@ -6,8 +6,8 @@ const TestimonialSection = () => {
   useEffect(() => {
     fetch("/testimonials.json")
       .then((res) => res.json())
-      .then((data) => setTestimonials(data))
-      .catch((err) => console.error("Failed to load testimonials:", err));
+      .then((data) => setTestimonials(data));
+    // .catch((err) => console.error("Failed to load testimonials:", err));
   }, []);
 
   return (

@@ -8,14 +8,13 @@ const SocialLogIn = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const handleGoogleLogIn = () => {
-    signInByGoogle()
-      .then((result) => {
-        if (result.user) {
-          const redirectTo = location.state || "/";
-          navigate(redirectTo);
-        }
-      })
-      .catch((error) => console.log(error.message));
+    signInByGoogle().then((result) => {
+      if (result.user) {
+        const redirectTo = location.state || "/";
+        navigate(redirectTo);
+      }
+    });
+    // .catch((error) => console.log(error.message));
   };
   return (
     <div className="text-center">

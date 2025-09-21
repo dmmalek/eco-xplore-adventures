@@ -14,7 +14,7 @@ const UpdateProfie = () => {
     const form = e.target;
     const name = form.name.value;
     const url = form.url.value;
-    console.log(name, url);
+
     profileUpdate(name, url).then(() => {
       // Profile updated!
       Swal.fire({

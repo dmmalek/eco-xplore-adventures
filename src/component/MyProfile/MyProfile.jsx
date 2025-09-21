@@ -5,7 +5,7 @@ import { FaUser, FaEdit } from "react-icons/fa";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
-  console.log(user.photoURL);
+
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-50 to-blue-50 px-4 py-8">
       <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 text-center">

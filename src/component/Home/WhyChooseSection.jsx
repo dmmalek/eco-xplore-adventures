@@ -6,7 +6,6 @@ const WhyChooseSection = () => {
     fetch("/features.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setFeatures(data);
       });
   }, []);
