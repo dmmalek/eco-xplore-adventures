@@ -52,7 +52,7 @@ const Register = () => {
   };
 
   return (
-    <div className="hero bg-base-200 min-h-screen px-4 py-8">
+    <div className="bg-base-200 min-h-screen px-4 py-8">
       <div className="w-full max-w-md">
         <div className="card bg-base-100 w-full shadow-2xl">
           <div className="card-body p-4 sm:p-6 md:p-8">

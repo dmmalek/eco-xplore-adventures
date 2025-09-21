@@ -14,7 +14,7 @@ const Banner = () => {
   const data = useLoaderData();
   return (
     <div
-      className="hero min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat w-full overflow-hidden"
+      className="hero min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat w-full"
       style={{ backgroundImage: `url(${BannerBg})` }}
     >
       <div className="hero-content w-full max-w-full lg:max-w-7xl mx-auto flex-col-reverse md:flex-row-reverse lg:flex-row-reverse gap-6 sm:gap-8 md:gap-10 lg:gap-16">
