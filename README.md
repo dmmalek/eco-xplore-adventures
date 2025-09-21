@@ -6,7 +6,7 @@
 
 ## 🌐 Live URL
 
-🔗 **[Live Demo](https://your-live-url-here.com)** _(Update with actual deployment URL)_
+🔗 **[Live Url](https://eco-xplore-adventures.netlify.app/)** _(Update with actual deployment URL)_
 
 ## ✨ Key Features
 
@@ -106,5 +106,4 @@ The application is fully responsive and optimized for:
 
 **Abdul Malek**
 
-- GitHub: [@dmmalek](https://github.com/dmmalek)
-- Portfolio: [Your Portfolio URL]
+- GitHub: [@dmmalek](https://github.com/dmmalek/eco-xplore-adventures.git)
