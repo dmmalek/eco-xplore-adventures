@@ -11,7 +11,7 @@ const MyProfile = () => {
       <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 text-center">
         <div className="mb-6 sm:mb-8">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-            Welcome Back!
+            Welcome Back , {user?.displayName || "Adventure Seeker"}
           </h1>
           <p className="text-sm sm:text-base text-gray-600">
             Manage your eco-adventure profile

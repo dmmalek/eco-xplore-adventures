@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 import { FaCheck } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const UpdateProfie = () => {
   const { profileUpdate } = useContext(AuthContext);
@@ -16,7 +17,11 @@ const UpdateProfie = () => {
     console.log(name, url);
     profileUpdate(name, url).then(() => {
       // Profile updated!
-      alert("Profile updated!");
+      Swal.fire({
+        title: "Good job!",
+        text: "Profile Updated Successfully",
+        icon: "success",
+      });
       navigate("/myprofile");
     });
   };

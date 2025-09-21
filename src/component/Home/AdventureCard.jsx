@@ -72,7 +72,7 @@ const AdventureCard = ({ adventures }) => {
           <div className="flex items-center justify-between pt-4 border-t border-gray-100">
             <div className="flex items-center space-x-2">
               <div className="flex items-center">
-                {[1, 2, 3, 4, 5].map((star) => (
+                {[1, 2, 3, 5].map((star) => (
                   <FaStar key={star} className="w-4 h-4 text-yellow-400" />
                 ))}
               </div>

@@ -39,37 +39,25 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a
-                  href="/"
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group"
-                >
+                <a className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                   Home
                 </a>
               </li>
               <li>
-                <a
-                  href="/adventures"
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group"
-                >
+                <a className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                   Adventures
                 </a>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group"
-                >
+                <a className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                   About Us
                 </a>
               </li>
               <li>
-                <a
-                  href="/contact"
-                  className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group"
-                >
+                <a className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base flex items-center group">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 group-hover:scale-125 transition-transform duration-200"></span>
                   Contact
                 </a>
@@ -141,22 +129,13 @@ const Footer = () => {
               © 2025 Eco Xplore Adventures. All rights reserved.
             </div>
             <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
-              <a
-                href="/privacy"
-                className="text-gray-400 hover:text-green-400 transition-colors duration-200"
-              >
+              <a className="text-gray-400 hover:text-green-400 transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a
-                href="/terms"
-                className="text-gray-400 hover:text-green-400 transition-colors duration-200"
-              >
+              <a className="text-gray-400 hover:text-green-400 transition-colors duration-200">
                 Terms of Service
               </a>
-              <a
-                href="/cookies"
-                className="text-gray-400 hover:text-green-400 transition-colors duration-200"
-              >
+              <a className="text-gray-400 hover:text-green-400 transition-colors duration-200">
                 Cookie Policy
               </a>
             </div>

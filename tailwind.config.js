@@ -10,6 +10,10 @@ export default {
         18: "4.5rem",
         88: "22rem",
       },
+      // ✅ Custom font
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui")],
