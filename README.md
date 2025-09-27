@@ -6,7 +6,7 @@
 
 ## 🌐 Live URL
 
-🔗 **[Live Url](https://eco-xplore-adventures.netlify.app/)** _(Update with actual deployment URL)_
+🔗 **[Live Url](https://eco-xplore-adventures.netlify.app/)**
 
 ## ✨ Key Features
 
